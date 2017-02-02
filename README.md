@@ -4,10 +4,6 @@ MTGoogleAdMob is written in Swift 3.0 and easy to use in project.
 
 ![BackgroundImage](https://github.com/manekdilip/MTGoogleAdMob/blob/master/Images/MTGoogleAdMob_2.gif)
 ![BackgroundImage](https://github.com/manekdilip/MTGoogleAdMob/blob/master/Images/MTGoogleAdMob_1.gif)
-![BackgroundImage](https://github.com/manekdilip/MTGoogleAdMob/blob/master/Images/Step_1_Test_Banner.png)
-![BackgroundImage](https://github.com/manekdilip/MTGoogleAdMob/blob/master/Images/Step_2_Test_Interstitial.png)
-![BackgroundImage](https://github.com/manekdilip/MTGoogleAdMob/blob/master/Images/Step_3_Live_Banner.png)
-![BackgroundImage](https://github.com/manekdilip/MTGoogleAdMob/blob/master/Images/Step_4_Live_Interstitial.png)
 
 
 #Installation
