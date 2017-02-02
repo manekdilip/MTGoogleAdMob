@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdMobIntegrationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgw-aI-gvC">
+                                <rect key="frame" x="87" y="82" width="200" height="45"/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.59607843140000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HLZ-b5-kH5"/>
+                                    <constraint firstAttribute="width" constant="200" id="ICZ-ED-Ke1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Show Banner Ads">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnBannerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAV-Qg-7HG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrb-ul-G6o">
+                                <rect key="frame" x="87" y="145" width="200" height="45"/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.59607843140000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="fpF-Nk-IJD"/>
+                                    <constraint firstAttribute="width" constant="200" id="jXq-K3-kuE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Show Interstitial Ads">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnInterstitialBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kf9-7M-UDb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tgw-aI-gvC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IYk-dC-2jB"/>
+                            <constraint firstItem="Xrb-ul-G6o" firstAttribute="top" secondItem="tgw-aI-gvC" secondAttribute="bottom" constant="18" id="Wnf-b2-KFQ"/>
+                            <constraint firstItem="tgw-aI-gvC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="g1C-DA-Rly"/>
+                            <constraint firstItem="Xrb-ul-G6o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i0b-ul-TTL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3nJ-KE-Twc"/>
+                    <connections>
+                        <outlet property="btnBannerAds" destination="tgw-aI-gvC" id="hAG-NN-Hr0"/>
+                        <outlet property="btnInterstitial" destination="Xrb-ul-G6o" id="gdl-yU-sqN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-118" y="97"/>
+        </scene>
+    </scenes>
+</document>
