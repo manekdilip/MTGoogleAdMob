@@ -15,7 +15,7 @@ Clone or Download this Repo. Then simply drag the class ```GoogleAdsMob.swift```
 
 ###Simply way to integrate ```GoogleAdMob```
 
-###Add Banner and Interstitial Ads Unit ID in ```GoogleAdsMob.swift```.
+###Add Banner and Interstitial Ads Unit ID in ```GoogleAdsMob.swift```
 
 ```
    //Google Test Unit ID for testing ads
