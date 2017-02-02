@@ -15,21 +15,6 @@ Clone or Download this Repo. Then simply drag the class ```GoogleAdsMob.swift```
 
 ###Simply way to integrate ```GoogleAdMob```
 
-
-###Initialization Memory
-
-```
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        //if isLiveUnitID passing parameter false than displaying test ads and if isLiveUnitID passing parameter true than displaying live ads.
-        GoogleAdMob.sharedInstance.initializeInterstitial(isLiveUnitID: false)
-        GoogleAdMob.sharedInstance.initializeBannerView(isLiveUnitID: false)
-        
-        return true
-    }
-
-```
 ###Add Banner and Interstitial Ads Unit ID in ```GoogleAdsMob.swift```.
 
 ```
@@ -44,6 +29,21 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         static var strBannerAdsID = "ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXXX"
         static var strInterstitialAdsID = "ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXXX"
     }
+```
+
+###Initialization Memory
+
+```
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        
+        //if isLiveUnitID passing parameter false than displaying test ads and if isLiveUnitID passing parameter true than displaying live ads.
+        GoogleAdMob.sharedInstance.initializeInterstitial(isLiveUnitID: false)
+        GoogleAdMob.sharedInstance.initializeBannerView(isLiveUnitID: false)
+        
+        return true
+    }
+
 ```
 
 ###Show Interstitial Ads
